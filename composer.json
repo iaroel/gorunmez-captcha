@@ -23,7 +23,7 @@
             "src/migrations"
         ],
         "psr-4": {
-            "Iaroel\\Recaptcha\\": "src/"
+            "Iaroel\\Gorunmez-captcha\\": "src/"
         }
     },
     "extra": {
