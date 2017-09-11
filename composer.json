@@ -1,8 +1,8 @@
 {
-    "name": "iaroel/recaptcha",
+    "name": "iaroel/gorunmez-captcha",
     "description": "reCAPTCHA Validator for Laravel 5 Forrked from https://github.com/greggilbert/recaptcha",
 	"keywords": ["recaptcha", "captcha", "laravel", "laravel5"],
-	"homepage": "https://github.com/iaroel/recaptcha",
+	"homepage": "https://github.com/iaroel/gorunmez-captcha",
 	"license": "MIT",
     "authors": [
         {
@@ -23,7 +23,7 @@
             "src/migrations"
         ],
         "psr-4": {
-            "Greggilbert\\Recaptcha\\": "src/"
+            "Iaroel\\Recaptcha\\": "src/"
         }
     },
     "extra": {
