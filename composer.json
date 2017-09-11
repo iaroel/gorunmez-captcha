@@ -1,14 +1,18 @@
 {
-    "name": "greggilbert/recaptcha",
-    "description": "reCAPTCHA Validator for Laravel 5",
+    "name": "iaroel/recaptcha",
+    "description": "reCAPTCHA Validator for Laravel 5 Forrked from https://github.com/greggilbert/recaptcha",
 	"keywords": ["recaptcha", "captcha", "laravel", "laravel5"],
-	"homepage": "http://github.com/greggilbert/recaptcha",
+	"homepage": "https://github.com/iaroel/recaptcha",
 	"license": "MIT",
     "authors": [
         {
             "name": "Greg Gilbert",
             "email": "greg@greg-gilbert.com"
-        }
+        },
+	 {
+            "name": "Erol Elcan",
+            "email": "iaroel@gmail.com"
+        }    
     ],
     "require": {
         "php": ">=5.3.0",
