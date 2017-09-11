@@ -19,20 +19,19 @@ if ( ! function_exists('renderDataAttributes')) {
 <script type="text/javascript">
       
         var onSubmit = function(token) {
+        grecaptcha.execute();
           console.log('success!');
         };
 
-        var onloadCallback = function() {
-          grecaptcha.render('submit', {
-            'sitekey' : '{{ $public_key }}',
-            'callback' : onSubmit
-          });
-        };
+       
     </script>
-<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
         
+<div id='recaptcha' class="g-recaptcha"
+          data-sitekey="{{ $public_key }}"
+          data-callback="onSubmit"
+          data-size="invisible"></div>
 
-<div class="g-recaptcha" data-sitekey="{{ $public_key }}" data-size="invisible"></div>
 <noscript>
     <div style="width: 302px; height: 352px;">
         <div style="width: 302px; height: 352px; position: relative;">
