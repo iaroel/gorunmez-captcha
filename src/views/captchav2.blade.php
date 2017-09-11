@@ -16,7 +16,20 @@ if ( ! function_exists('renderDataAttributes')) {
         var RecaptchaOptions = <?=json_encode($options) ?>;
     </script>
 @endif
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript">
+      
+        var onSubmit = function(token) {
+          console.log('success!');
+        };
+
+        var onloadCallback = function() {
+          grecaptcha.render('submit', {
+            'sitekey' : '{{ $public_key }}',
+            'callback' : onSubmit
+          });
+        };
+    </script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback" async defer></script>
         
 
 <div class="g-recaptcha" data-sitekey="{{ $public_key }}" data-size="invisible"></div>
