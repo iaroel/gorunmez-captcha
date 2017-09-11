@@ -1,6 +1,6 @@
 <?php
 
-namespace Greggilbert\Recaptcha\Facades;
+namespace Iaroel\Gorunmezcaptcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
